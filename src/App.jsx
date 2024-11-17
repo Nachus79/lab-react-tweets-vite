@@ -41,22 +41,10 @@ function App() {
   return (
     <div className="App">
       <Tweet tweet={ tweetsArray[0] } />
+      <Tweet tweet={ tweetsArray[1] } />
+      <Tweet tweet={ tweetsArray[2] } />
     </div>
   );
 }
 
 export default App;
-
-
-/*{Iteration 3 | Create the Components
-We will now create new files for the components that we'll make in the following iterations. Inside the folder src/components/ create the following new files:
-
-src/components/ProfileImage.jsx ,
-src/components/User.jsx ,
-src/components/Timestamp.jsx ,
-src/components/Message.jsx and
-src/components/Actions.jsx.
-
-In the following iterations, you will work on refactoring the Tweet component. You will be asked to extract parts of the existing HTML structure into new components:}*/
-
-
