@@ -1,13 +1,12 @@
+import ProfileImage from "./ProfileImage";
+
 function Tweet({ tweet }) {
   const { user, timestamp, message } = tweet;
 
   return (
     <div className="tweet">
-      <img
-        src={user.image}
-        className="profile"
-        alt={`${user.name} profile`}
-      />
+      
+      <ProfileImage image={user.image} />
 
       <div className="body">
         <div className="top">
