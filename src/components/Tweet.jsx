@@ -1,19 +1,18 @@
 import ProfileImage from "./ProfileImage";
+import User from "./User";
 
 function Tweet({ tweet }) {
   const { user, timestamp, message } = tweet;
 
   return (
     <div className="tweet">
-      
+
       <ProfileImage image={user.image} />
 
       <div className="body">
         <div className="top">
-          <span className="user">
-            <span className="name">{user.name}</span>
-            <span className="handle">@{user.handle}</span>
-          </span>
+
+          <User name={user.name} handle={user.handle} />
 
           <span className="timestamp">{timestamp}</span>
         </div>
